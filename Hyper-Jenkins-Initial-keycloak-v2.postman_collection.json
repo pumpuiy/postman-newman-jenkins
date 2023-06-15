@@ -5749,6 +5749,7 @@
 						"exec": [
 							"",
 							"",
+							"postman.setEnvironmentVariable(\"keycloak_url\", \"https://hyper-authen-dev.techberry.co.th\");",
 							"postman.setEnvironmentVariable(\"realm\", \"demo-hyper-suites\");",
 							"",
 							"postman.setEnvironmentVariable(\"client-organization-id\", \"d03b2843-29bf-4044-b849-5f87936ebeb4\");",
