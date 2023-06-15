@@ -234,13 +234,9 @@
 							"script": {
 								"exec": [
 									"\r",
-									"pm.test(\"Status code is 204\", function () {\r",
-									"    pm.response.to.have.status(204)\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Status code is 404\", function () {\r",
-									"    pm.response.to.have.status(404)\r",
-									"});"
+									"pm.test('Check status code', () => {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404])\r",
+									"})"
 								],
 								"type": "text/javascript"
 							}
@@ -740,7 +736,7 @@
 							"script": {
 								"exec": [
 									"\r",
-									"pm.test(pm.request.body);\r",
+									"// pm.test(pm.request.body);\r",
 									"\r",
 									"pm.test(\"Status code is 201\", function () {\r",
 									"    pm.response.to.have.status(201)\r",
