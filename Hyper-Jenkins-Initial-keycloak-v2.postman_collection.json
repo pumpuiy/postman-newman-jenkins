@@ -736,7 +736,6 @@
 							"script": {
 								"exec": [
 									"\r",
-									"// pm.test(pm.request.body);\r",
 									"\r",
 									"pm.test(\"Status code is 201\", function () {\r",
 									"    pm.response.to.have.status(201)\r",
