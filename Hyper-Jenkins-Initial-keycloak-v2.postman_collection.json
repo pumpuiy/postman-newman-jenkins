@@ -5745,7 +5745,6 @@
 						"type": "text/javascript",
 						"exec": [
 							"",
-							"/*",
 							"postman.setEnvironmentVariable(\"keycloak_url\", \"https://hyper-authen-dev.techberry.co.th\");",
 							"postman.setEnvironmentVariable(\"realm\", \"demo-hyper-suites\");",
 							"",
@@ -5764,7 +5763,6 @@
 							"postman.setEnvironmentVariable(\"client-hyperdesigner-baseUrl\", \"\");",
 							"postman.setEnvironmentVariable(\"client-hyperdesigner-redirectUris\", \"\");",
 							"postman.setEnvironmentVariable(\"client-hyperdesigner-secret\", \"ddf90c13-b53d-4818-83c8-b59fa2d843ce\");",
-							"*/",
 							"",
 							""
 						]
