@@ -767,7 +767,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"{{client-organization-id}}\",\n    \"clientId\": \"{{client-organization-clientId}}\",\n    \"name\": \"{{client-organization-name}}\",\n    \"description\": \"Hyper : Internal client for registered products. Currently support only 2 products code \\\"hyper-designer\\\" and \\\"hyper-gateway\\\".\",\n    \"rootUrl\": \"{{client-organization-rootUrl}}\",\n    \"adminUrl\": \"\",\n    \"baseUrl\": \"{{client-organization-baseUrl}}\",\n    \"surrogateAuthRequired\": false,\n    \"enabled\": true,\n    \"alwaysDisplayInConsole\": false,\n    \"clientAuthenticatorType\": \"client-secret\",\n    \"secret\": \"{{client-organization-secret}}\",\n    \"redirectUris\": [\n        \"{{client-organization-redirectUris}}\"\n    ],\n    \"webOrigins\": [],\n    \"notBefore\": 0,\n    \"bearerOnly\": false,\n    \"consentRequired\": false,\n    \"standardFlowEnabled\": true,\n    \"implicitFlowEnabled\": false,\n    \"directAccessGrantsEnabled\": true,\n    \"serviceAccountsEnabled\": true,\n    \"authorizationServicesEnabled\": true,\n    \"publicClient\": false,\n    \"frontchannelLogout\": false,\n    \"protocol\": \"openid-connect\",\n    \"attributes\": {\n        \"id.token.as.detached.signature\": \"false\",\n        \"saml.assertion.signature\": \"false\",\n        \"saml.force.post.binding\": \"false\",\n        \"saml.multivalued.roles\": \"false\",\n        \"saml.encrypt\": \"false\",\n        \"post.logout.redirect.uris\": \"+\",\n        \"oauth2.device.authorization.grant.enabled\": \"false\",\n        \"backchannel.logout.revoke.offline.tokens\": \"false\",\n        \"saml.server.signature\": \"false\",\n        \"saml.server.signature.keyinfo.ext\": \"false\",\n        \"use.refresh.tokens\": \"true\",\n        \"exclude.session.state.from.auth.response\": \"false\",\n        \"oidc.ciba.grant.enabled\": \"false\",\n        \"saml.artifact.binding\": \"false\",\n        \"backchannel.logout.session.required\": \"true\",\n        \"client_credentials.use_refresh_token\": \"false\",\n        \"saml_force_name_id_format\": \"false\",\n        \"require.pushed.authorization.requests\": \"false\",\n        \"saml.client.signature\": \"false\",\n        \"tls.client.certificate.bound.access.tokens\": \"false\",\n        \"saml.authnstatement\": \"false\",\n        \"display.on.consent.screen\": \"false\",\n        \"saml.onetimeuse.condition\": \"false\"\n    },\n    \"authenticationFlowBindingOverrides\": {},\n    \"fullScopeAllowed\": true,\n    \"nodeReRegistrationTimeout\": -1,\n    \"protocolMappers\": [\n        {\n            \"name\": \"menu_default_gateway\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default_gateway\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default_gateway\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"role\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"role\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"role\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"full_group_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"true\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"full_group_roles\",\n                \"userinfo.token.claim\": \"true\"\n            }\n        },\n        {\n            \"name\": \"metadata\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"metadata\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"metadata\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"username\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-property-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"userinfo.token.claim\": \"true\",\n                \"user.attribute\": \"username\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"preferred_username\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"name\": \"menu_default\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"showgroup\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"false\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"groups\",\n                \"userinfo.token.claim\": \"false\"\n            }\n        },\n        {\n            \"name\": \"group_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"false\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"group_roles\",\n                \"userinfo.token.claim\": \"true\"\n            }\n        },\n        {\n            \"name\": \"menu_default_toolkit\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"false\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default_toolkit\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default_toolkit\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"metadata_gateway\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"metadata_gateway\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"metadata_gateway\",\n                \"jsonType.label\": \"JSON\"\n            }\n        }\n    ],\n    \"defaultClientScopes\": [\n        \"web-origins\",\n        \"hyper_claims\",\n        \"phone\",\n        \"roles\"\n    ],\n    \"optionalClientScopes\": [\n        \"address\",\n        \"data-factory\",\n        \"offline_access\",\n        \"microprofile-jwt\",\n        \"fs\"\n    ],\n    \"access\": {\n        \"view\": true,\n        \"configure\": true,\n        \"manage\": true\n    }\n}"
+							"raw": "{\n    \"id\": \"{{client_organization_id}}\",\n    \"clientId\": \"{{client_organization_clientId}}\",\n    \"name\": \"{{client_organization_name}}\",\n    \"description\": \"Hyper : Internal client for registered products. Currently support only 2 products code \\\"hyper-designer\\\" and \\\"hyper-gateway\\\".\",\n    \"rootUrl\": \"{{client_organization_rootUrl}}\",\n    \"adminUrl\": \"\",\n    \"baseUrl\": \"{{client_organization_baseUrl}}\",\n    \"surrogateAuthRequired\": false,\n    \"enabled\": true,\n    \"alwaysDisplayInConsole\": false,\n    \"clientAuthenticatorType\": \"client-secret\",\n    \"secret\": \"{{client_organization_secret}}\",\n    \"redirectUris\": [\n        \"{{client_organization_redirectUris}}\"\n    ],\n    \"webOrigins\": [],\n    \"notBefore\": 0,\n    \"bearerOnly\": false,\n    \"consentRequired\": false,\n    \"standardFlowEnabled\": true,\n    \"implicitFlowEnabled\": false,\n    \"directAccessGrantsEnabled\": true,\n    \"serviceAccountsEnabled\": true,\n    \"authorizationServicesEnabled\": true,\n    \"publicClient\": false,\n    \"frontchannelLogout\": false,\n    \"protocol\": \"openid-connect\",\n    \"attributes\": {\n        \"id.token.as.detached.signature\": \"false\",\n        \"saml.assertion.signature\": \"false\",\n        \"saml.force.post.binding\": \"false\",\n        \"saml.multivalued.roles\": \"false\",\n        \"saml.encrypt\": \"false\",\n        \"post.logout.redirect.uris\": \"+\",\n        \"oauth2.device.authorization.grant.enabled\": \"false\",\n        \"backchannel.logout.revoke.offline.tokens\": \"false\",\n        \"saml.server.signature\": \"false\",\n        \"saml.server.signature.keyinfo.ext\": \"false\",\n        \"use.refresh.tokens\": \"true\",\n        \"exclude.session.state.from.auth.response\": \"false\",\n        \"oidc.ciba.grant.enabled\": \"false\",\n        \"saml.artifact.binding\": \"false\",\n        \"backchannel.logout.session.required\": \"true\",\n        \"client_credentials.use_refresh_token\": \"false\",\n        \"saml_force_name_id_format\": \"false\",\n        \"require.pushed.authorization.requests\": \"false\",\n        \"saml.client.signature\": \"false\",\n        \"tls.client.certificate.bound.access.tokens\": \"false\",\n        \"saml.authnstatement\": \"false\",\n        \"display.on.consent.screen\": \"false\",\n        \"saml.onetimeuse.condition\": \"false\"\n    },\n    \"authenticationFlowBindingOverrides\": {},\n    \"fullScopeAllowed\": true,\n    \"nodeReRegistrationTimeout\": -1,\n    \"protocolMappers\": [\n        {\n            \"name\": \"menu_default_gateway\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default_gateway\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default_gateway\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"role\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"role\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"role\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"full_group_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"true\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"full_group_roles\",\n                \"userinfo.token.claim\": \"true\"\n            }\n        },\n        {\n            \"name\": \"metadata\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"metadata\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"metadata\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"username\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-property-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"userinfo.token.claim\": \"true\",\n                \"user.attribute\": \"username\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"preferred_username\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"name\": \"menu_default\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"showgroup\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"false\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"groups\",\n                \"userinfo.token.claim\": \"false\"\n            }\n        },\n        {\n            \"name\": \"group_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-group-membership-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"full.path\": \"false\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"group_roles\",\n                \"userinfo.token.claim\": \"true\"\n            }\n        },\n        {\n            \"name\": \"menu_default_toolkit\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"false\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"menu_default_toolkit\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_default_toolkit\",\n                \"jsonType.label\": \"JSON\"\n            }\n        },\n        {\n            \"name\": \"metadata_gateway\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-attribute-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"aggregate.attrs\": \"false\",\n                \"userinfo.token.claim\": \"true\",\n                \"multivalued\": \"false\",\n                \"user.attribute\": \"metadata_gateway\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"metadata_gateway\",\n                \"jsonType.label\": \"JSON\"\n            }\n        }\n    ],\n    \"defaultClientScopes\": [\n        \"web-origins\",\n        \"hyper_claims\",\n        \"phone\",\n        \"roles\"\n    ],\n    \"optionalClientScopes\": [\n        \"address\",\n        \"data-factory\",\n        \"offline_access\",\n        \"microprofile-jwt\",\n        \"fs\"\n    ],\n    \"access\": {\n        \"view\": true,\n        \"configure\": true,\n        \"manage\": true\n    }\n}"
 						},
 						"url": {
 							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients",
@@ -917,7 +917,7 @@
 							"raw": "{\n    \"id\": \"90df3f0e-726f-4b29-96d1-e144a0042cd8\",\n    \"name\": \"hypersuite_menu_designer\",\n    \"description\": \"แสดง product hyper-designer\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"2c3e32ef-6594-4b79-bda0-e5a3a9ccb094\",\n    \"attributes\" : {\n        \"product\": [\n            \"{\\\"active\\\":false,\\\"domain\\\":\\\"https:\\/\\/hyper-design-dev.techberry.co.th\\\",\\\"path\\\":\\\"\\/toolkit\\/\\\",\\\"environment\\\":\\\"dev\\\",\\\"name\\\":\\\"HYPERDESIGNER\\\",\\\"description\\\":\\\"Hyper Integration is a low code, visual development tool that comprises 2 main modules. The <b>Studio Designer<\\/b> module allows rapid design and testing of flows that can be published into services.  The <b>Flow Management<\\/b> module provides simple and easy to use way to configure, organize, and deploy services.\\\",\\\"product_suffix\\\":\\\"menu_designer\\\"}\"\n        ]\n    }\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-organization-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_organization_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -926,7 +926,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-organization-id}}",
+								"{{client_organization_id}}",
 								"roles"
 							]
 						},
@@ -1068,7 +1068,7 @@
 							"raw": "{\n    \"name\": \"designer_repo\",\n    \"description\": \"เก็บ Server List\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"2c3e32ef-6594-4b79-bda0-e5a3a9ccb094\",\n    \"attributes\" : {\n        \"designer_repo_list\": [\n            \"{\\\"alias\\\":\\\"HyperDEV\\\",\\\"domain\\\":\\\"https:\\/\\/hyper-system-dev.techberry.co.th\\\",\\\"environment\\\":\\\"dev\\\",\\\"uuid\\\":\\\"54c39228-4169-4511-acc1-591eb54351cf\\\",\\\"version\\\":\\\"v7.2.3\\\"}\"\n        ]\n    }\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-organization-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_organization_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -1077,7 +1077,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-organization-id}}",
+								"{{client_organization_id}}",
 								"roles"
 							]
 						},
@@ -1219,7 +1219,7 @@
 							"raw": "{\n    \"name\": \"runtime_repo\",\n    \"description\": \"เอาไว้เก็บ server ของ runtime\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"2c3e32ef-6594-4b79-bda0-e5a3a9ccb094\",\n    \"attributes\": {\n        \"runtime_repo_list\": [\n            \"{\\\"alias\\\":\\\"RUNTIME_DEV\\\",\\\"domain\\\":\\\"https://backend-dev.techberry.co.th\\\",\\\"environment\\\":\\\"dev\\\",\\\"name\\\":\\\"micro-engine-dev\\\",\\\"uuid\\\":\\\"94751889-0718-4605-bd75-cb780c439bb2\\\",\\\"version\\\":\\\"v7.2.2\\\"}\",\n            \"{\\\"alias\\\":\\\"RUNTIME SIT\\\",\\\"domain\\\":\\\"https://backend-dev.techberry.co.th\\\",\\\"environment\\\":\\\"sit\\\",\\\"name\\\":\\\"\\\",\\\"uuid\\\":\\\"154fd5f5-470c-4fe4-a5ef-6b75b34fcdf9\\\",\\\"version\\\":\\\"v1.0.0\\\"}\",\n            \"{\\\"alias\\\":\\\"RUNTIME UAT\\\",\\\"domain\\\":\\\"https://apigw.beebuddy.net\\\",\\\"environment\\\":\\\"uat\\\",\\\"name\\\":\\\"micro-engine-uat\\\",\\\"uuid\\\":\\\"9a7b1af7-fcb5-4fd8-9cde-662e29c84084\\\",\\\"version\\\":\\\"v7.2.2\\\"}\"\n        ]\n    }\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-organization-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_organization_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -1228,7 +1228,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-organization-id}}",
+								"{{client_organization_id}}",
 								"roles"
 							]
 						},
@@ -1367,7 +1367,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\" : \"{{client-hyperdesigner-id}}\",\n  \"clientId\": \"{{client-hyperdesigner-clientId}}\",\n  \"name\": \"{{client-hyperdesigner-name}}\",\n  \"rootUrl\": \"{{client-hyperdesigner-rootUrl}}\",\n  \"adminUrl\": \"\",\n  \"baseUrl\": \"{{client-hyperdesigner-baseUrl}}\",\n  \"surrogateAuthRequired\": false,\n  \"enabled\": true,\n  \"alwaysDisplayInConsole\": false,\n  \"clientAuthenticatorType\": \"client-secret\",\n  \"secret\": \"{{client-hyperdesigner-secret}}\",\n  \"redirectUris\": [\n    \"{{client-hyperdesigner-redirectUris}}\"\n  ],\n  \"webOrigins\": [\n    \"*\"\n  ],\n  \"notBefore\": 0,\n  \"bearerOnly\": false,\n  \"consentRequired\": false,\n  \"standardFlowEnabled\": true,\n  \"implicitFlowEnabled\": false,\n  \"directAccessGrantsEnabled\": true,\n  \"serviceAccountsEnabled\": true,\n  \"authorizationServicesEnabled\": true,\n  \"publicClient\": false,\n  \"frontchannelLogout\": false,\n  \"protocol\": \"openid-connect\",\n  \"attributes\": {\n    \"access.token.lifespan\": \"900\",\n    \"saml.multivalued.roles\": \"false\",\n    \"saml.force.post.binding\": \"false\",\n    \"oauth2.device.authorization.grant.enabled\": \"false\",\n    \"backchannel.logout.revoke.offline.tokens\": \"false\",\n    \"saml.server.signature.keyinfo.ext\": \"false\",\n    \"use.refresh.tokens\": \"true\",\n    \"oidc.ciba.grant.enabled\": \"false\",\n    \"backchannel.logout.session.required\": \"true\",\n    \"client_credentials.use_refresh_token\": \"false\",\n    \"saml.client.signature\": \"false\",\n    \"require.pushed.authorization.requests\": \"false\",\n    \"client.session.max.lifespan\": \"540\",\n    \"client.session.idle.timeout\": \"10800\",\n    \"saml.assertion.signature\": \"false\",\n    \"id.token.as.detached.signature\": \"false\",\n    \"saml.encrypt\": \"false\",\n    \"saml.server.signature\": \"false\",\n    \"exclude.session.state.from.auth.response\": \"false\",\n    \"saml.artifact.binding\": \"false\",\n    \"saml_force_name_id_format\": \"false\",\n    \"tls.client.certificate.bound.access.tokens\": \"false\",\n    \"saml.authnstatement\": \"false\",\n    \"display.on.consent.screen\": \"false\",\n    \"saml.onetimeuse.condition\": \"false\"\n  },\n  \"authenticationFlowBindingOverrides\": {},\n  \"fullScopeAllowed\": true,\n  \"nodeReRegistrationTimeout\": -1,\n  \"protocolMappers\": [\n    {\n      \"name\": \"Client Host\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientHost\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientHost\",\n        \"jsonType.label\": \"String\"\n      }\n    },\n    {\n      \"name\": \"Client IP Address\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientAddress\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientAddress\",\n        \"jsonType.label\": \"String\"\n      }\n    },\n    {\n      \"name\": \"menu_roles\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usermodel-client-role-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"multivalued\": \"true\",\n        \"userinfo.token.claim\": \"true\",\n        \"id.token.claim\": \"false\",\n        \"access.token.claim\": \"false\",\n        \"claim.name\": \"menu_roles\",\n        \"usermodel.clientRoleMapping.clientId\": \"hyper-designer\"\n      }\n    },\n    {\n      \"name\": \"Client ID\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientId\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientId\",\n        \"jsonType.label\": \"String\"\n      }\n    }\n  ],\n  \"defaultClientScopes\": [\n    \"web-origins\",\n    \"hyper_claims\",\n    \"acr\",\n    \"profile\",\n    \"roles\",\n    \"email\"\n  ],\n  \"optionalClientScopes\": [\n    \"address\",\n    \"phone\",\n    \"offline_access\",\n    \"microprofile-jwt\"\n  ],\n  \"access\": {\n    \"view\": true,\n    \"configure\": true,\n    \"manage\": true\n  }\n}"
+							"raw": "{\n  \"id\" : \"{{client_hyperdesigner_id}}\",\n  \"clientId\": \"{{client_hyperdesigner_clientId}}\",\n  \"name\": \"{{client_hyperdesigner_name}}\",\n  \"rootUrl\": \"{{client_hyperdesigner_rootUrl}}\",\n  \"adminUrl\": \"\",\n  \"baseUrl\": \"{{client_hyperdesigner_baseUrl}}\",\n  \"surrogateAuthRequired\": false,\n  \"enabled\": true,\n  \"alwaysDisplayInConsole\": false,\n  \"clientAuthenticatorType\": \"client-secret\",\n  \"secret\": \"{{client_hyperdesigner_secret}}\",\n  \"redirectUris\": [\n    \"{{client_hyperdesigner_redirectUris}}\"\n  ],\n  \"webOrigins\": [\n    \"*\"\n  ],\n  \"notBefore\": 0,\n  \"bearerOnly\": false,\n  \"consentRequired\": false,\n  \"standardFlowEnabled\": true,\n  \"implicitFlowEnabled\": false,\n  \"directAccessGrantsEnabled\": true,\n  \"serviceAccountsEnabled\": true,\n  \"authorizationServicesEnabled\": true,\n  \"publicClient\": false,\n  \"frontchannelLogout\": false,\n  \"protocol\": \"openid-connect\",\n  \"attributes\": {\n    \"access.token.lifespan\": \"900\",\n    \"saml.multivalued.roles\": \"false\",\n    \"saml.force.post.binding\": \"false\",\n    \"oauth2.device.authorization.grant.enabled\": \"false\",\n    \"backchannel.logout.revoke.offline.tokens\": \"false\",\n    \"saml.server.signature.keyinfo.ext\": \"false\",\n    \"use.refresh.tokens\": \"true\",\n    \"oidc.ciba.grant.enabled\": \"false\",\n    \"backchannel.logout.session.required\": \"true\",\n    \"client_credentials.use_refresh_token\": \"false\",\n    \"saml.client.signature\": \"false\",\n    \"require.pushed.authorization.requests\": \"false\",\n    \"client.session.max.lifespan\": \"540\",\n    \"client.session.idle.timeout\": \"10800\",\n    \"saml.assertion.signature\": \"false\",\n    \"id.token.as.detached.signature\": \"false\",\n    \"saml.encrypt\": \"false\",\n    \"saml.server.signature\": \"false\",\n    \"exclude.session.state.from.auth.response\": \"false\",\n    \"saml.artifact.binding\": \"false\",\n    \"saml_force_name_id_format\": \"false\",\n    \"tls.client.certificate.bound.access.tokens\": \"false\",\n    \"saml.authnstatement\": \"false\",\n    \"display.on.consent.screen\": \"false\",\n    \"saml.onetimeuse.condition\": \"false\"\n  },\n  \"authenticationFlowBindingOverrides\": {},\n  \"fullScopeAllowed\": true,\n  \"nodeReRegistrationTimeout\": -1,\n  \"protocolMappers\": [\n    {\n      \"name\": \"Client Host\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientHost\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientHost\",\n        \"jsonType.label\": \"String\"\n      }\n    },\n    {\n      \"name\": \"Client IP Address\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientAddress\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientAddress\",\n        \"jsonType.label\": \"String\"\n      }\n    },\n    {\n      \"name\": \"menu_roles\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usermodel-client-role-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"multivalued\": \"true\",\n        \"userinfo.token.claim\": \"true\",\n        \"id.token.claim\": \"false\",\n        \"access.token.claim\": \"false\",\n        \"claim.name\": \"menu_roles\",\n        \"usermodel.clientRoleMapping.clientId\": \"hyper-designer\"\n      }\n    },\n    {\n      \"name\": \"Client ID\",\n      \"protocol\": \"openid-connect\",\n      \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n      \"consentRequired\": false,\n      \"config\": {\n        \"user.session.note\": \"clientId\",\n        \"id.token.claim\": \"true\",\n        \"access.token.claim\": \"true\",\n        \"claim.name\": \"clientId\",\n        \"jsonType.label\": \"String\"\n      }\n    }\n  ],\n  \"defaultClientScopes\": [\n    \"web-origins\",\n    \"hyper_claims\",\n    \"acr\",\n    \"profile\",\n    \"roles\",\n    \"email\"\n  ],\n  \"optionalClientScopes\": [\n    \"address\",\n    \"phone\",\n    \"offline_access\",\n    \"microprofile-jwt\"\n  ],\n  \"access\": {\n    \"view\": true,\n    \"configure\": true,\n    \"manage\": true\n  }\n}"
 						},
 						"url": {
 							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients",
@@ -1488,7 +1488,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"id\": \"{{client-hyperdesigner-id}}\",\n    \"clientId\": \"hyper-designer\",\n    \"name\": \"Hyper Designer\",\n    \"rootUrl\": \"{{client-hyperdesigner-rootUrl}}\",\n    \"adminUrl\": \"\",\n    \"baseUrl\": \"{{client-hyperdesigner-baseUrl}}\",\n    \"surrogateAuthRequired\": false,\n    \"enabled\": true,\n    \"alwaysDisplayInConsole\": false,\n    \"clientAuthenticatorType\": \"client-secret\",\n    \"secret\": \"{{client-hyperdesigner-secret}}\",\n    \"redirectUris\": [\n        \"{{client-hyperdesigner-redirectUris}}\"\n    ],\n    \"webOrigins\": [\n        \"*\"\n    ],\n    \"notBefore\": 0,\n    \"bearerOnly\": false,\n    \"consentRequired\": false,\n    \"standardFlowEnabled\": true,\n    \"implicitFlowEnabled\": false,\n    \"directAccessGrantsEnabled\": true,\n    \"serviceAccountsEnabled\": true,\n    \"authorizationServicesEnabled\": true,\n    \"publicClient\": false,\n    \"frontchannelLogout\": false,\n    \"protocol\": \"openid-connect\",\n    \"attributes\": {\n        \"access.token.lifespan\": \"900\",\n        \"saml.multivalued.roles\": \"false\",\n        \"saml.force.post.binding\": \"false\",\n        \"oauth2.device.authorization.grant.enabled\": \"false\",\n        \"backchannel.logout.revoke.offline.tokens\": \"false\",\n        \"saml.server.signature.keyinfo.ext\": \"false\",\n        \"use.refresh.tokens\": \"true\",\n        \"oidc.ciba.grant.enabled\": \"false\",\n        \"backchannel.logout.session.required\": \"true\",\n        \"client_credentials.use_refresh_token\": \"false\",\n        \"saml.client.signature\": \"false\",\n        \"require.pushed.authorization.requests\": \"false\",\n        \"client.session.max.lifespan\": \"540\",\n        \"client.session.idle.timeout\": \"10800\",\n        \"saml.assertion.signature\": \"false\",\n        \"id.token.as.detached.signature\": \"false\",\n        \"saml.encrypt\": \"false\",\n        \"saml.server.signature\": \"false\",\n        \"exclude.session.state.from.auth.response\": \"false\",\n        \"saml.artifact.binding\": \"false\",\n        \"saml_force_name_id_format\": \"false\",\n        \"tls.client.certificate.bound.access.tokens\": \"false\",\n        \"saml.authnstatement\": \"false\",\n        \"display.on.consent.screen\": \"false\",\n        \"saml.onetimeuse.condition\": \"false\"\n    },\n    \"authenticationFlowBindingOverrides\": {},\n    \"fullScopeAllowed\": true,\n    \"nodeReRegistrationTimeout\": -1,\n    \"protocolMappers\": [\n        {\n            \"id\": \"fbd84228-164b-44c2-9990-f4c302bf12b0\",\n            \"name\": \"Client Host\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientHost\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientHost\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"id\": \"8eaad8b1-b2ea-4ed6-a2b9-fcec1d919823\",\n            \"name\": \"Client IP Address\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientAddress\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientAddress\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"id\": \"06dd0009-29f0-4880-8dc2-7289701e75c9\",\n            \"name\": \"menu_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-client-role-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"multivalued\": \"true\",\n                \"userinfo.token.claim\": \"true\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_roles\",\n                \"usermodel.clientRoleMapping.clientId\": \"hyper-designer\"\n            }\n        },\n        {\n            \"id\": \"2a94751d-9a65-48f4-9088-b9281537d980\",\n            \"name\": \"Client ID\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientId\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientId\",\n                \"jsonType.label\": \"String\"\n            }\n        }\n    ],\n    \"defaultClientScopes\": [\n        \"web-origins\",\n        \"hyper_claims\",\n        \"acr\",\n        \"profile\",\n        \"roles\",\n        \"email\"\n    ],\n    \"optionalClientScopes\": [\n        \"address\",\n        \"phone\",\n        \"offline_access\",\n        \"microprofile-jwt\"\n    ],\n    \"access\": {\n        \"view\": true,\n        \"configure\": true,\n        \"manage\": true\n    }\n}",
+									"raw": "{\n    \"id\": \"{{client_hyperdesigner_id}}\",\n    \"clientId\": \"hyper-designer\",\n    \"name\": \"Hyper Designer\",\n    \"rootUrl\": \"{{client_hyperdesigner_rootUrl}}\",\n    \"adminUrl\": \"\",\n    \"baseUrl\": \"{{client_hyperdesigner_baseUrl}}\",\n    \"surrogateAuthRequired\": false,\n    \"enabled\": true,\n    \"alwaysDisplayInConsole\": false,\n    \"clientAuthenticatorType\": \"client-secret\",\n    \"secret\": \"{{client_hyperdesigner_secret}}\",\n    \"redirectUris\": [\n        \"{{client_hyperdesigner_redirectUris}}\"\n    ],\n    \"webOrigins\": [\n        \"*\"\n    ],\n    \"notBefore\": 0,\n    \"bearerOnly\": false,\n    \"consentRequired\": false,\n    \"standardFlowEnabled\": true,\n    \"implicitFlowEnabled\": false,\n    \"directAccessGrantsEnabled\": true,\n    \"serviceAccountsEnabled\": true,\n    \"authorizationServicesEnabled\": true,\n    \"publicClient\": false,\n    \"frontchannelLogout\": false,\n    \"protocol\": \"openid-connect\",\n    \"attributes\": {\n        \"access.token.lifespan\": \"900\",\n        \"saml.multivalued.roles\": \"false\",\n        \"saml.force.post.binding\": \"false\",\n        \"oauth2.device.authorization.grant.enabled\": \"false\",\n        \"backchannel.logout.revoke.offline.tokens\": \"false\",\n        \"saml.server.signature.keyinfo.ext\": \"false\",\n        \"use.refresh.tokens\": \"true\",\n        \"oidc.ciba.grant.enabled\": \"false\",\n        \"backchannel.logout.session.required\": \"true\",\n        \"client_credentials.use_refresh_token\": \"false\",\n        \"saml.client.signature\": \"false\",\n        \"require.pushed.authorization.requests\": \"false\",\n        \"client.session.max.lifespan\": \"540\",\n        \"client.session.idle.timeout\": \"10800\",\n        \"saml.assertion.signature\": \"false\",\n        \"id.token.as.detached.signature\": \"false\",\n        \"saml.encrypt\": \"false\",\n        \"saml.server.signature\": \"false\",\n        \"exclude.session.state.from.auth.response\": \"false\",\n        \"saml.artifact.binding\": \"false\",\n        \"saml_force_name_id_format\": \"false\",\n        \"tls.client.certificate.bound.access.tokens\": \"false\",\n        \"saml.authnstatement\": \"false\",\n        \"display.on.consent.screen\": \"false\",\n        \"saml.onetimeuse.condition\": \"false\"\n    },\n    \"authenticationFlowBindingOverrides\": {},\n    \"fullScopeAllowed\": true,\n    \"nodeReRegistrationTimeout\": -1,\n    \"protocolMappers\": [\n        {\n            \"id\": \"fbd84228-164b-44c2-9990-f4c302bf12b0\",\n            \"name\": \"Client Host\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientHost\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientHost\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"id\": \"8eaad8b1-b2ea-4ed6-a2b9-fcec1d919823\",\n            \"name\": \"Client IP Address\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientAddress\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientAddress\",\n                \"jsonType.label\": \"String\"\n            }\n        },\n        {\n            \"id\": \"06dd0009-29f0-4880-8dc2-7289701e75c9\",\n            \"name\": \"menu_roles\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usermodel-client-role-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"multivalued\": \"true\",\n                \"userinfo.token.claim\": \"true\",\n                \"id.token.claim\": \"false\",\n                \"access.token.claim\": \"false\",\n                \"claim.name\": \"menu_roles\",\n                \"usermodel.clientRoleMapping.clientId\": \"hyper-designer\"\n            }\n        },\n        {\n            \"id\": \"2a94751d-9a65-48f4-9088-b9281537d980\",\n            \"name\": \"Client ID\",\n            \"protocol\": \"openid-connect\",\n            \"protocolMapper\": \"oidc-usersessionmodel-note-mapper\",\n            \"consentRequired\": false,\n            \"config\": {\n                \"user.session.note\": \"clientId\",\n                \"id.token.claim\": \"true\",\n                \"access.token.claim\": \"true\",\n                \"claim.name\": \"clientId\",\n                \"jsonType.label\": \"String\"\n            }\n        }\n    ],\n    \"defaultClientScopes\": [\n        \"web-origins\",\n        \"hyper_claims\",\n        \"acr\",\n        \"profile\",\n        \"roles\",\n        \"email\"\n    ],\n    \"optionalClientScopes\": [\n        \"address\",\n        \"phone\",\n        \"offline_access\",\n        \"microprofile-jwt\"\n    ],\n    \"access\": {\n        \"view\": true,\n        \"configure\": true,\n        \"manage\": true\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1607,7 +1607,7 @@
 							"raw": "{\n    \"name\": \"designer_menu_admin\",\n    \"description\": \"menu for hyper administrator\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -1616,7 +1616,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -1645,7 +1645,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -1654,7 +1654,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -1758,7 +1758,7 @@
 							"raw": "{\n    \"name\": \"designer_menu_factory\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -1767,7 +1767,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -1791,7 +1791,7 @@
 									"raw": "{\n    \"name\": \"designer_menu_factory\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -1800,7 +1800,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -1903,7 +1903,7 @@
 							"raw": "{\n    \"name\": \"designer_menu_flows\",\n    \"description\": \"\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -1912,7 +1912,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -1936,7 +1936,7 @@
 									"raw": "{\n    \"name\": \"designer_menu_flows\",\n    \"description\": \"\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -1945,7 +1945,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -2048,7 +2048,7 @@
 							"raw": "{\n        \"name\": \"designer_menu_form_config\",\n        \"composite\": false,\n        \"clientRole\": true,\n        \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n    }"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -2057,7 +2057,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -2086,7 +2086,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -2095,7 +2095,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -2198,7 +2198,7 @@
 							"raw": "{\n        \"name\": \"designer_menu_property\",\n        \"composite\": false,\n        \"clientRole\": true,\n        \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n    }"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -2207,7 +2207,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -2231,7 +2231,7 @@
 									"raw": "{\n        \"name\": \"designer_menu_property\",\n        \"composite\": false,\n        \"clientRole\": true,\n        \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n    }"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -2240,7 +2240,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -2343,7 +2343,7 @@
 							"raw": "{\n        \"name\": \"designer_menu_publish\",\n        \"description\": \"menu publish สำหรับให้ user -> deployer ใช้ในการ deploy flows\",\n        \"composite\": false,\n        \"clientRole\": true,\n        \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n    }"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -2352,7 +2352,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -2376,7 +2376,7 @@
 									"raw": "{\n        \"name\": \"designer_menu_publish\",\n        \"description\": \"menu publish สำหรับให้ user -> deployer ใช้ในการ deploy flows\",\n        \"composite\": false,\n        \"clientRole\": true,\n        \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n    }"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -2385,7 +2385,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -2488,7 +2488,7 @@
 							"raw": "{\n    \"name\": \"designer_menu_runtime\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -2497,7 +2497,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -2521,7 +2521,7 @@
 									"raw": "{\n    \"name\": \"designer_menu_runtime\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -2530,7 +2530,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -2633,7 +2633,7 @@
 							"raw": "{\n    \"name\": \"designer_menu_runtimemgr\",\n    \"description\": \"เมนู runtime manager\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -2642,7 +2642,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-hyperdesigner-id}}",
+								"{{client_hyperdesigner_id}}",
 								"roles"
 							]
 						},
@@ -2666,7 +2666,7 @@
 									"raw": "{\n    \"name\": \"designer_menu_runtimemgr\",\n    \"description\": \"เมนู runtime manager\",\n    \"composite\": false,\n    \"clientRole\": true,\n    \"containerId\": \"16355ed8-9e28-4b41-8ff4-9ccc9d14f800\"\n}"
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-hyperdesigner-id}}/roles",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_hyperdesigner_id}}/roles",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -2675,7 +2675,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-hyperdesigner-id}}",
+										"{{client_hyperdesigner_id}}",
 										"roles"
 									]
 								}
@@ -3020,7 +3020,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-organization-id}}/roles/hypersuite_menu_designer",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_organization_id}}/roles/hypersuite_menu_designer",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -3029,7 +3029,7 @@
 								"realms",
 								"{{realm}}",
 								"clients",
-								"{{client-organization-id}}",
+								"{{client_organization_id}}",
 								"roles",
 								"hypersuite_menu_designer"
 							]
@@ -3051,7 +3051,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client-organization-id}}/roles/hypersuite_menu_designer",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{client_organization_id}}/roles/hypersuite_menu_designer",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -3060,7 +3060,7 @@
 										"realms",
 										"{{realm}}",
 										"clients",
-										"{{client-organization-id}}",
+										"{{client_organization_id}}",
 										"roles",
 										"hypersuite_menu_designer"
 									]
@@ -3177,7 +3177,7 @@
 							"raw": "[\n    {\n        \"id\": \"{{role-hypermenudesigner-id}}\",\n        \"name\": \"hypersuite_menu_designer\",\n        \"description\": \"แสดง product hyper-designer\"\n    }\n]"
 						},
 						"url": {
-							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client-organization-id}}",
+							"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client_organization_id}}",
 							"host": [
 								"{{keycloak_url}}"
 							],
@@ -3189,7 +3189,7 @@
 								"{{group-hyperdesigner-id}}",
 								"role-mappings",
 								"clients",
-								"{{client-organization-id}}"
+								"{{client_organization_id}}"
 							]
 						},
 						"description": "Update role mappings\n\n"
@@ -3217,7 +3217,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client-organization-id}}",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client_organization_id}}",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -3229,7 +3229,7 @@
 										"{{group-hyperdesigner-id}}",
 										"role-mappings",
 										"clients",
-										"{{client-organization-id}}"
+										"{{client_organization_id}}"
 									]
 								}
 							},
@@ -3303,7 +3303,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client-organization-id}}",
+									"raw": "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{group-hyperdesigner-id}}/role-mappings/clients/{{client_organization_id}}",
 									"host": [
 										"{{keycloak_url}}"
 									],
@@ -3315,7 +3315,7 @@
 										"{{group-hyperdesigner-id}}",
 										"role-mappings",
 										"clients",
-										"{{client-organization-id}}"
+										"{{client_organization_id}}"
 									]
 								}
 							},
@@ -5749,21 +5749,21 @@
 							"postman.setEnvironmentVariable(\"keycloak_url\", \"https://hyper-authen-dev.techberry.co.th\");",
 							"postman.setEnvironmentVariable(\"realm\", \"demo-hyper-suites\");",
 							"",
-							"postman.setEnvironmentVariable(\"client-organization-id\", \"d03b2843-29bf-4044-b849-5f87936ebeb4\");",
-							"postman.setEnvironmentVariable(\"client-organization-clientId\", \"organization\");",
-							"postman.setEnvironmentVariable(\"client-organization-name\", \"organization\");",
-							"postman.setEnvironmentVariable(\"client-organization-rootUrl\",\"\");",
-							"postman.setEnvironmentVariable(\"client-organization-baseUrl\", \"/organization\");",
-							"postman.setEnvironmentVariable(\"client-organization-redirectUris\", \"/organization*\");",
-							"postman.setEnvironmentVariable(\"client-organization-secret\", \"8e995304-cc3c-4260-98f9-b5acace4a8fb\");",
+							"postman.setEnvironmentVariable(\"client_organization_id\", \"d03b2843-29bf-4044-b849-5f87936ebeb4\");",
+							"postman.setEnvironmentVariable(\"client_organization_clientId\", \"organization\");",
+							"postman.setEnvironmentVariable(\"client_organization_name\", \"organization\");",
+							"postman.setEnvironmentVariable(\"client_organization_rootUrl\",\"\");",
+							"postman.setEnvironmentVariable(\"client_organization_baseUrl\", \"/organization\");",
+							"postman.setEnvironmentVariable(\"client_organization_redirectUris\", \"/organization*\");",
+							"postman.setEnvironmentVariable(\"client_organization_secret\", \"8e995304-cc3c-4260-98f9-b5acace4a8fb\");",
 							"",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-id\",\"1848c484-9175-424c-bdba-e78e3e086192\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-clientId\", \"hyper-designer\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-name\", \"hyper-designer\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-rootUrl\",\"https://hyper-design-dev-demo.techberry.co.th/hypersuite\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-baseUrl\", \"\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-redirectUris\", \"\");",
-							"postman.setEnvironmentVariable(\"client-hyperdesigner-secret\", \"ddf90c13-b53d-4818-83c8-b59fa2d843ce\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_id\",\"1848c484-9175-424c-bdba-e78e3e086192\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_clientId\", \"hyper-designer\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_name\", \"hyper-designer\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_rootUrl\",\"https://hyper-design-dev-demo.techberry.co.th/hypersuite\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_baseUrl\", \"\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_redirectUris\", \"\");",
+							"postman.setEnvironmentVariable(\"client_hyperdesigner_secret\", \"ddf90c13-b53d-4818-83c8-b59fa2d843ce\");",
 							"*/",
 							""
 						]
